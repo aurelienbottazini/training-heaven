@@ -1,3 +1,5 @@
+const webpack = require('webpack');
+
 module.exports = {
   entry: ['babel-polyfill', './src/app.js'],
   output: {
@@ -13,9 +15,24 @@ module.exports = {
         loader: 'babel-loader',
       },
       {
+        test: require.resolve('zepto/zepto.min.js'),
+        loader: 'exports?window.$!script',
+      },
+      {
         test: /\.scss$/,
         loaders: ['style', 'css', 'sass'],
       },
     ],
   },
+  plugins: [
+    new webpack.ProvidePlugin({
+      R: 'ramda',
+    }),
+    new webpack.ProvidePlugin({
+      $: 'zepto/zepto.min.js',
+    }),
+    new webpack.ProvidePlugin({
+      _: 'lodash',
+    }),
+  ],
 };
