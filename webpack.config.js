@@ -37,5 +37,8 @@ module.exports = {
     new webpack.ProvidePlugin({
       S: 'sanctuary',
     }),
+    new webpack.ProvidePlugin({
+      Task: 'data.task',
+    }),
   ],
 };
