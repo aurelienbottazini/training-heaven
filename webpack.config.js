@@ -40,5 +40,11 @@ module.exports = {
     new webpack.ProvidePlugin({
       Task: 'data.task',
     }),
+    new webpack.ProvidePlugin({
+      Future: 'fluture',
+    }),
+    new webpack.ProvidePlugin({
+      IO: 'fantasy-io',
+    }),
   ],
 };
