@@ -46,5 +46,17 @@ module.exports = {
     new webpack.ProvidePlugin({
       IO: 'fantasy-io',
     }),
+    new webpack.ProvidePlugin({
+      Bacon: 'baconjs',
+    }),
+    new webpack.ProvidePlugin({
+      PF: 'pointfree-fantasy',
+    }),
+    new webpack.ProvidePlugin({
+      Monoids: 'pointfree-fantasy/instances/monoids',
+    }),
+    new webpack.ProvidePlugin({
+      Maybe: 'pointfree-fantasy/instances/maybe',
+    }),
   ],
 };
