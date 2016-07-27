@@ -58,5 +58,8 @@ module.exports = {
     new webpack.ProvidePlugin({
       Maybe: 'pointfree-fantasy/instances/maybe',
     }),
+    new webpack.ProvidePlugin({
+      FC: 'fantasy-combinators',
+    }),
   ],
 };
