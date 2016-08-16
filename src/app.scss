@@ -22,3 +22,25 @@ button {
   height: 200px;
   background: lightgrey;
 }
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+
+  li {
+    background-color: darkred;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
+  ul {
+    flex-direction: column;
+    margin-left: 0;
+    padding-left: 0;
+
+    li {
+      padding-left: 0;
+    }
+  }
+}
