@@ -15,7 +15,7 @@ module.exports = {
         loader: 'babel-loader',
       },
       {
-        test: require.resolve('zepto/zepto.min.js'),
+        test: require.resolve('zepto/dist/zepto.min.js'),
         loader: 'exports?window.$!script',
       },
       {
@@ -34,7 +34,7 @@ module.exports = {
       R: 'ramda',
     }),
     new webpack.ProvidePlugin({
-      $: 'zepto/zepto.min.js',
+      $: 'zepto/dist/zepto.min.js',
     }),
     new webpack.ProvidePlugin({
       _: 'lodash',
