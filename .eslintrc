@@ -3,14 +3,22 @@
   "extends": "airbnb",
   "env": {
     "jest": true,
-    "jasmine": true
+    "jasmine": true,
+    "browser": true
   },
   "settings": {
     "import/resolver": {
       "babel-module-alias": {}
     }
   },
+  "globals": {
+  "R": false,
+  "S": false,
+  "$": false,
+  "ASQ": false
+  },
   "rules": {
+    "new-cap": 0,
     "no-console": ["error", { allow: ["warn", "error", "log"] }],
     "comma-dangle": 0,
     "prefer-arrow-callback": 0,
