@@ -1,10 +1,10 @@
-
 {
   "extends": "airbnb",
   "env": {
     "jest": true,
     "jasmine": true,
-    "browser": true
+    "browser": true,
+    "es6": true
   },
   "settings": {
     "import/resolver": {
@@ -12,14 +12,12 @@
     }
   },
   "globals": {
-  "R": false,
   "S": false,
   "$": false,
   "ASQ": false
   },
   "rules": {
     "new-cap": 0,
-    "no-console": ["error", { allow: ["warn", "error", "log"] }],
     "comma-dangle": 0,
     "prefer-arrow-callback": 0,
     "camelcase": [0, {"properties": "never"}],
@@ -41,6 +39,8 @@
     "jsx-a11y"
   ],
   "parserOptions": {
+    "esversion": 6,
+    "ecmaVersion": 6,
     "ecmaFeatures": {
       "experimentalObjectRestSpread": true
     }
