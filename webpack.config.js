@@ -40,6 +40,9 @@ module.exports = {
       _: 'lodash',
     }),
     new webpack.ProvidePlugin({
+      Vue: 'vue/dist/vue.common.js',
+    }),
+    new webpack.ProvidePlugin({
       S: 'sanctuary',
     }),
     new webpack.ProvidePlugin({
@@ -66,5 +69,8 @@ module.exports = {
     new webpack.ProvidePlugin({
       FC: 'fantasy-combinators',
     }),
+    new webpack.ProvidePlugin({
+      Identity: 'pointfree-fantasy/instances/identity',
+    })
   ],
 };

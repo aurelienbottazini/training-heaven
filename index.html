@@ -10,9 +10,11 @@
     <script src="/jasmine/boot.js"></script>
     <script src="/asynquence/asynquence.js"></script>
     <script src="/asynquence/asynquence-contrib.js"></script>
-    <script src="/build/bundle.js"></script>
   </head>
   <body>
+    <div id="app">
+      {{ message }}
+    </div>
     <nav>
       <ul>
         <li>Home</li>
@@ -44,7 +46,7 @@
       <span>CLICK ME #box</span>
     </div>
     <input type="text" placeholder="Search" value="Search Text" id="search" />
-    <h3>Style me</h3>
+    <h3>Style me #list</h3>
     <ol id="list">
       <li>item 1</li>
       <li>item 2</li>
@@ -151,5 +153,6 @@
       <rect x="10" y="10" height="100" width="100"
         style="stroke:#000000; fill: #0000ff"/>
     </svg>
+    <script src="/build/bundle.js"></script>
   </body>
 </html>
