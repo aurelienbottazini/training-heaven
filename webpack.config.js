@@ -43,6 +43,9 @@ module.exports = {
       Vue: 'vue/dist/vue.common.js',
     }),
     new webpack.ProvidePlugin({
+      Vuex: 'vuex',
+    }),
+    new webpack.ProvidePlugin({
       S: 'sanctuary',
     }),
     new webpack.ProvidePlugin({
