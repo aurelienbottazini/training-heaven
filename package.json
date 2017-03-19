@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "yarn run jest",
     "server": "./node_modules/.bin/webpack-dev-server --inline --hot --port 8888",
-    "start": "npm run server",
+    "start": "yarn run server",
     "install": "npm rebuild node-sass"
   },
   "author": "",
@@ -19,6 +19,7 @@
     "babel-preset-stage-0": "^6.16.0",
     "css-loader": "^0.26.0",
     "file-loader": "0.9.0",
+    "jest": "^19.0.2",
     "node-sass": "^3.13.0",
     "sass-loader": "^4.0.2",
     "style-loader": "^0.13.1",
@@ -29,6 +30,7 @@
   "dependencies": {
     "asynquence": "^0.9.0",
     "asynquence-contrib": "^0.27.0",
+    "axios": "^0.15.3",
     "babel-polyfill": "^6.9.1",
     "baconjs": "^0.7.89",
     "data.task": "^3.1.0",
@@ -48,5 +50,12 @@
     "vue": "^2.1.10",
     "vuex": "^2.1.1",
     "zepto": "^1.0.1"
+  },
+  "jest": {
+    "testRegex": "(/__tests__/.*|\\.(test|spec)|training)\\.(js)$",
+    "moduleFileExtensions": [
+      "js"
+    ],
+    "setupTestFrameworkScriptFile": "<rootDir>/jest/setup.js"
   }
 }
