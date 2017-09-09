@@ -74,6 +74,6 @@ module.exports = {
     }),
     new webpack.ProvidePlugin({
       Identity: 'pointfree-fantasy/instances/identity',
-    })
+    }),
   ],
 };
