@@ -4670,10 +4670,6 @@ querystringify@0.0.x:
   version "0.0.4"
   resolved "https://registry.yarnpkg.com/querystringify/-/querystringify-0.0.4.tgz#0cf7f84f9463ff0ae51c4c4b142d95be37724d9c"
 
-ramda@0.21.x:
-  version "0.21.0"
-  resolved "https://registry.yarnpkg.com/ramda/-/ramda-0.21.0.tgz#a001abedb3ff61077d4ff1d577d44de77e8d0a35"
-
 ramda@^0.24.1:
   version "0.24.1"
   resolved "https://registry.yarnpkg.com/ramda/-/ramda-0.24.1.tgz#c3b7755197f35b8dc3502228262c4c91ddb6b857"
@@ -5026,20 +5022,38 @@ safe-buffer@~5.1.0, safe-buffer@~5.1.1:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.1.1.tgz#893312af69b2123def71f57889001671eeb2c853"
 
-sanctuary-def@0.6.x:
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/sanctuary-def/-/sanctuary-def-0.6.0.tgz#b91d6763a1becb35e89461dea517bb01b3724885"
+sanctuary-def@0.12.1:
+  version "0.12.1"
+  resolved "https://registry.yarnpkg.com/sanctuary-def/-/sanctuary-def-0.12.1.tgz#bb9b2ad9407b1519d1ee61fd293b24e86a2044b3"
+  dependencies:
+    sanctuary-type-classes "6.0.x"
+    sanctuary-type-identifiers "2.0.x"
+
+sanctuary-type-classes@6.0.0, sanctuary-type-classes@6.0.x:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/sanctuary-type-classes/-/sanctuary-type-classes-6.0.0.tgz#1db3f8c1247de018471e978fe4956a03eb62f464"
+  dependencies:
+    sanctuary-type-identifiers "1.0.x"
 
 sanctuary-type-classes@^1.0.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/sanctuary-type-classes/-/sanctuary-type-classes-1.2.0.tgz#e3098c83fcfbaf35a8eb3bba2b1713ff869afa61"
 
-sanctuary@^0.11.1:
-  version "0.11.1"
-  resolved "https://registry.yarnpkg.com/sanctuary/-/sanctuary-0.11.1.tgz#7ee874e973e03074f57f34b5773b11089484b85a"
+sanctuary-type-identifiers@1.0.x:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/sanctuary-type-identifiers/-/sanctuary-type-identifiers-1.0.0.tgz#e8f359f006cb5e624cfb8464603fc114608bde9f"
+
+sanctuary-type-identifiers@2.0.1, sanctuary-type-identifiers@2.0.x:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/sanctuary-type-identifiers/-/sanctuary-type-identifiers-2.0.1.tgz#fc524cf6dd92cebfcbb0dd9509eff193159a20ed"
+
+sanctuary@^0.13.2:
+  version "0.13.2"
+  resolved "https://registry.yarnpkg.com/sanctuary/-/sanctuary-0.13.2.tgz#ed1c9c2f2b1745d659ee3457954c8b1154f8d4a8"
   dependencies:
-    ramda "0.21.x"
-    sanctuary-def "0.6.x"
+    sanctuary-def "0.12.1"
+    sanctuary-type-classes "6.0.0"
+    sanctuary-type-identifiers "2.0.1"
 
 sane@^2.0.0:
   version "2.0.0"
