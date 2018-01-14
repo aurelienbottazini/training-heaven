@@ -3,7 +3,7 @@ const webpack = require('webpack');
 module.exports = {
   entry: ['babel-polyfill', './src/app.js'],
   output: {
-    path: './build',
+    path: '/build',
     publicPath: '/build',
     filename: 'bundle.js',
   },
@@ -20,7 +20,7 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        loaders: ['style', 'css', 'sass'],
+        loaders: ['style-loader', 'css-loader', 'sass-loader'],
       },
       {
         test: /\.png$/,
