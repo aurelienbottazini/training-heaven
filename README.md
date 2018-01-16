@@ -1,14 +1,34 @@
 # training
 
-A Clojure library designed to ... well, that part is up to you.
+A playground to do my code katas.
 
-## Usage
 
-FIXME
+## Setup
 
-## License
+### Create
 
-Copyright © 2017 FIXME
+```
+src/training.rb
+src/training.js
+src/training.clj
+src/training.scss
+```
 
-Distributed under the Eclipse Public License either version 1.0 or (at
-your option) any later version.
+Those files are ignored and you can put your Katas there.
+
+### Install packages
+
+- `yarn`
+- `bundle`
+
+## To test/run your Katas
+
+- Javascript: `yarn test`
+- css/scss: `yarn start`, edit src/training.scss and go to http://localhost:8888
+- ruby: `bundle exec guard`
+- clojure: start the repl from your favorite code editor
+
+
+    
+
+
