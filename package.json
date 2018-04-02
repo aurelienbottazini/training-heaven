@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "yarn run jest",
+    "test": "yarn run jest --watch",
     "server": "./node_modules/.bin/webpack-dev-server --inline --hot --port 8888",
     "start": "yarn run server",
     "install": "npm rebuild node-sass"

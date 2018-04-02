@@ -1,16 +1,37 @@
 <script src="../node_modules/vue/dist/vue.js"></script>
 
 <div id="app">
-<example :tags="['h1', 'h2', 'h3']"></example>
+  <example :ok="ok"></example>
+  <button @click="ok = !ok">toggle component</button>
 </div>
 
 <script>
+  const Foo = {
+    // Implement this!
+    render(h) {
+      return h('div', 'foo');
+    }
+  };
+
+  const Bar = {
+    // Implement this!
+    render(h) {
+      return h('div', 'bar');
+    }
+  };
+
   Vue.component('example', {
     // Implement this!
-    render(h, { props: { tags }}) {
-      return h('div', tags.map((t, index) => h(t, index)))
+    props: {
+      ok: Boolean,
+    },
+    render(h) {
+      return this.ok ? h(Foo) : h(Bar);
     }
-  })
+  });
 
-  new Vue({ el: '#app' })
+  new Vue({
+    el: '#app',
+    data: { ok: true }
+  })
 </script>
