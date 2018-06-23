@@ -8,6 +8,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  guard!
+  guard-shell!
   fastri!
   rcodetools!
   guard!
