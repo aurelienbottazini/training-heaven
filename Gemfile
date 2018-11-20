@@ -1,4 +1,4 @@
 source 'https://rubygems.org' do
-  gem 'guard'
-  gem 'guard-shell'
+  gem 'fastri'
+  gem 'rcodetools'
 end
