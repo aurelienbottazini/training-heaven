@@ -29,6 +29,7 @@
     "webpack-dev-server": "^2.11.0"
   },
   "dependencies": {
+    "alias-quokka-plugin": "^0.1.0",
     "asynquence": "^0.10.2",
     "asynquence-contrib": "^0.28.2",
     "axios": "^0.17.1",
@@ -45,6 +46,7 @@
     "fantasy-combinators": "0.0.1",
     "fantasy-io": "0.0.1",
     "fluture": "^8.0.0",
+    "jsdom-quokka-plugin": "^1.0.13",
     "lodash": "^4.13.1",
     "pointfree-fantasy": "^0.1.3",
     "ramda": "^0.25.0",
@@ -61,5 +63,17 @@
       "js"
     ],
     "setupTestFrameworkScriptFile": "<rootDir>/jest/setup.js"
+  },
+  "quokka": {
+    "plugins": [
+      "alias-quokka-plugin",
+      "jsdom-quokka-plugin"
+    ],
+    "jsdom": {
+      "html": "<div id=\"test\"></div>"
+    },
+    "alias": {
+      "vue": "./node_modules/vue/dist/vue.common.js"
+    }
   }
 }
