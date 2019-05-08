@@ -1,0 +1,14 @@
+{:deps {
+        org.clojure/clojure {:mvn/version "1.10.0"}
+        org.clojure/clojurescript {:mvn/version "1.10.516"}
+        cljsjs/react-dom {:mvn/version "16.2.0-3"}
+        com.bhauman/figwheel-main {:mvn/version "0.2.0"}
+        com.bhauman/rebel-readline-cljs {:mvn/version "0.1.4"}
+        devcards {:mvn/version "0.2.5"}
+        reagent {:mvn/version "0.8.1"}
+        re-frame {:mvn/version "0.10.6"}
+        org.omcljs/om {:mvn/version "1.0.0-beta4"}
+        }
+ :aliases {:rebel {:extra-deps {com.bhauman/rebel-readline {:mvn/version "0.1.4"}}
+                   :main-opts  ["-m" "rebel-readline.main"]}}
+ :paths ["src"]}
