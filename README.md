@@ -8,7 +8,7 @@ A playground to do my code katas.
 ### Create `training files`
 
 ```
-touch src/training.rb src/training.js src/training.clj src/training.scss training.html
+touch src/training.rb src/training.clj src/training.scss training.html
 ```
 
 Those files are ignored and you can put your Katas there.
