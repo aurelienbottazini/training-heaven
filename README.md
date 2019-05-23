@@ -17,19 +17,10 @@ training.html
 
 Those files are ignored and you can put your Katas there.
 
-### Install packages
+## To test/run Katas
 
-- `yarn`
-- `bundle`
-
-## To test/run your Katas
-
-- Javascript: `yarn test`
-- css/scss: `yarn start`, edit src/training.scss and go to http://localhost:8888
-- ruby: `bundle exec guard`
+- Javascript: I use quokkajs
+- css: I use intellij to automatically refresh the browser
+- ruby: emacs with xmp
 - clojure: start the repl from your favorite code editor
-
-
-    
-
 
