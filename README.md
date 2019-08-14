@@ -8,7 +8,7 @@ A playground to do my code katas.
 ### Create `training files`
 
 ```
-touch src/training.rb src/training_heaven/training.clj src/training.scss training.html
+touch ruby/training.rb clojure/src/training_heaven/training.clj html/training.scss html/training.html
 ```
 
 Those files are ignored and you can put your Katas there.
@@ -19,4 +19,3 @@ Those files are ignored and you can put your Katas there.
 - css: I use intellij to automatically refresh the browser
 - ruby: emacs with xmp
 - clojure: start the repl from your favorite code editor
-
